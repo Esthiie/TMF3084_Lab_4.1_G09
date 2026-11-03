@@ -1,5 +1,6 @@
 // lib/homePage.dart
 import 'package:flutter/material.dart';
+import 'aboutpage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -19,7 +20,12 @@ class HomePage extends StatelessWidget {
             // Twitter Logo -> Links to AboutPage
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, '/about');
+                Navigator.push(
+                  context,
+                   MaterialPageRoute(
+                    builder: (context) => const AboutPage(),
+                    ),
+                );
               },
               child: Image.asset(
                 'assets/images/twitter.jpg',
@@ -31,7 +37,12 @@ class HomePage extends StatelessWidget {
             // Facebook Logo -> Links to AboutPage
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, '/about');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                  builder: (context) => const AboutPage(),
+                  ),
+                );
               },
               child: Image.asset(
                 'assets/images/fblogo.png',
