@@ -1,5 +1,6 @@
 // lib/homePage.dart
 import 'package:flutter/material.dart';
+
 import 'aboutpage.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,7 +15,11 @@ class HomePage extends StatelessWidget {
           children: [
             const Text(
               ' Pizza Hunter',
-              style: TextStyle(fontSize: 20.0, color: Colors.white, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             const Spacer(),
             // Twitter Logo -> Links to AboutPage
@@ -22,9 +27,7 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                   MaterialPageRoute(
-                    builder: (context) => const AboutPage(),
-                    ),
+                  MaterialPageRoute(builder: (context) => const AboutPage()),
                 );
               },
               child: Image.asset(
@@ -39,9 +42,7 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                  builder: (context) => const AboutPage(),
-                  ),
+                  MaterialPageRoute(builder: (context) => const AboutPage()),
                 );
               },
               child: Image.asset(
@@ -122,7 +123,10 @@ class HomePage extends StatelessWidget {
                   const SizedBox(height: 30),
                   const Text(
                     "Hi, I'm the Pizza Assistant,\nwhat can I help you order?",
-                    style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.w500),
+                    style: TextStyle(
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.w500,
+                    ),
                     textAlign: TextAlign.center,
                   ),
                 ],

@@ -12,14 +12,12 @@ class AboutPage extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
 
-
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-
               const SizedBox(height: 30),
 
               // App Logo
@@ -29,10 +27,7 @@ class AboutPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey),
                 ),
-                child: Image.asset(
-                  'images/Chef.jpg',
-                  fit: BoxFit.cover,
-                ),
+                child: Image.asset('images/Chef.jpg', fit: BoxFit.cover),
               ),
 
               const SizedBox(height: 20),
@@ -40,10 +35,7 @@ class AboutPage extends StatelessWidget {
               // App Name
               const Text(
                 'PIZZA NAME',
-                style: TextStyle(
-                  fontSize: 50,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
               ),
 
               const SizedBox(height: 10),
@@ -67,10 +59,7 @@ class AboutPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey),
                 ),
-                child: Image.asset(
-                  'images/TomatoPizza.jpg',
-                  fit: BoxFit.cover,
-                ),
+                child: Image.asset('images/TomatoPizza.jpg', fit: BoxFit.cover),
               ),
 
               const SizedBox(height: 30),
@@ -92,7 +81,6 @@ class AboutPage extends StatelessWidget {
               const Divider(),
 
               const SizedBox(height: 20),
-
             ],
           ),
         ),

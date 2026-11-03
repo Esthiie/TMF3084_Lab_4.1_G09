@@ -1,5 +1,6 @@
 // lib/main.dart
 import 'package:flutter/material.dart';
+
 import 'homepage.dart';
 
 void main() {
@@ -15,10 +16,7 @@ class PizzaHunterApp extends StatelessWidget {
       title: 'Pizza Hunter',
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
-      routes: {
-        '/': (context) => const HomePage(),
-
-      },
+      routes: {'/': (context) => const HomePage()},
     );
   }
 }
