@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'aboutpage.dart';
 
 class HomePage extends StatelessWidget {
-  const Homepage({super.key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
