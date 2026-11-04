@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -18,9 +17,7 @@ class _FacebookPageState extends State<FacebookPage> {
 
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..loadRequest(
-        Uri.parse('https://www.facebook.com'),
-      );
+      ..loadRequest(Uri.parse('https://www.facebook.com'));
   }
 
   @override
