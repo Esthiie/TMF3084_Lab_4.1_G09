@@ -34,7 +34,7 @@ class AboutPage extends StatelessWidget {
 
               // App Name
               const Text(
-                'PIZZA NAME',
+                'WOW PIZZA',
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
               ),
 
