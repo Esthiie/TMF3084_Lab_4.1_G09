@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+
 import 'homePage.dart';
 
 void main() {
@@ -14,13 +14,9 @@ class PizzaHunterApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Pizza Hunter',
-      theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
-      ),
+      theme: ThemeData(primarySwatch: Colors.deepOrange),
       home: const HomePage(),
-      routes: {
-        '/menu': (context) => const HomePage(),
-      },
+      routes: {'/menu': (context) => const HomePage()},
     );
   }
 }
