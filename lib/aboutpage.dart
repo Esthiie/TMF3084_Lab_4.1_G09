@@ -34,7 +34,7 @@ class AboutPage extends StatelessWidget {
 
               // App Name
               const Text(
-                'WOW PIZZA',
+                'Pizza Hunter',
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
               ),
 
@@ -72,7 +72,7 @@ class AboutPage extends StatelessWidget {
               const ListTile(
                 leading: Icon(Icons.email),
                 title: Text('Email'),
-                subtitle: Text('WowPizza@gmail.com'),
+                subtitle: Text('PizzaHunter@gmail.com'),
               ),
 
               const ListTile(
