@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'aboutpage.dart';
+import 'facebookpage.dart';
 import 'homepage.dart';
+import 'menupage.dart';
+import 'twitterpage.dart';
 
 void main() {
   runApp(const PizzaHunterApp());
@@ -15,8 +19,15 @@ class PizzaHunterApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Pizza Hunter',
       theme: ThemeData(primarySwatch: Colors.deepOrange),
-      home: const HomePage(),
-      routes: {'/menu': (context) => const HomePage()},
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomePage(),
+        '/menu': (context) => const MenuPage(),
+        '/about': (context) => const AboutPage(),
+        '/contact': (context) => const AboutPage(),
+        '/twitter': (context) => const TwitterPage(),
+        '/facebook': (context) => const FacebookPage(),
+      },
     );
   }
 }
