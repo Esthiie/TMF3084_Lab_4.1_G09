@@ -8,43 +8,43 @@ class MenuPage extends StatelessWidget {
       'name': 'Margherita Pizza',
       'ingredients': 'Tomato sauce, mozzarella, fresh basil',
       'price': 'RM 8.99',
-      'img': 'assets/images/margherita.png'
+      'img': 'assets/images/margherita.png',
     },
     {
       'name': 'Pepperoni Pizza',
       'ingredients': 'Pepperoni, mozzarella, tomato sauce',
       'price': 'RM 10.99',
-      'img': 'assets/images/pepperoni.png'
+      'img': 'assets/images/pepperoni.png',
     },
     {
       'name': 'BBQ Chicken Pizza',
       'ingredients': 'Grilled chicken, BBQ sauce, onion, mozzarella',
       'price': 'RM 11.99',
-      'img': 'assets/images/bbq_chicken.png'
+      'img': 'assets/images/bbq_chicken.png',
     },
     {
       'name': 'Hawaiian Pizza',
       'ingredients': 'Ham, pineapple, mozzarella',
       'price': 'RM 10.99',
-      'img': 'assets/images/hawaiian.png'
+      'img': 'assets/images/hawaiian.png',
     },
     {
       'name': 'Meat Lover Pizza',
       'ingredients': 'Pepperoni, beef, sausage, bacon',
       'price': 'RM 12.99',
-      'img': 'assets/images/meat_lover.png'
+      'img': 'assets/images/meat_lover.png',
     },
     {
       'name': 'Seafood Pizza',
       'ingredients': 'Prawns, squid, mussels, mozzarella',
       'price': 'RM 13.99',
-      'img': 'assets/images/seafood.png'
+      'img': 'assets/images/seafood.png',
     },
     {
       'name': 'Veggie Supreme Pizza',
       'ingredients': 'Capsicum, mushroom, olives, onion, sweet corn',
       'price': 'RM 9.99',
-      'img': 'assets/images/veggie_supreme.png'
+      'img': 'assets/images/veggie_supreme.png',
     },
   ];
 
@@ -62,8 +62,10 @@ class MenuPage extends StatelessWidget {
                 for (final p in pizzas)
                   ListTile(
                     isThreeLine: true,
-                    contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                    contentPadding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 6,
+                    ),
                     leading: ClipRRect(
                       borderRadius: BorderRadius.circular(8),
                       child: Image.asset(
@@ -103,7 +105,10 @@ class MenuPage extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: FilledButton(
               onPressed: () => Navigator.pushNamedAndRemoveUntil(
-                  context, '/', (route) => false),
+                context,
+                '/',
+                (route) => false,
+              ),
               child: const Text('Back to Home'),
             ),
           ),
