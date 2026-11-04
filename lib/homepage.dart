@@ -7,6 +7,8 @@ import 'menupage.dart';
 
 import 'twitterpage.dart';
 
+import 'facebookpage.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -46,7 +48,7 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const AboutPage()),
+                  MaterialPageRoute(builder: (context) => const FacebookPage()),
                 );
               },
               child: Image.asset(
