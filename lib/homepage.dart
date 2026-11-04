@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 
 import 'aboutpage.dart';
 
+import 'menupage.dart';
+
+import 'twitterpage.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -27,7 +31,7 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const AboutPage()),
+                  MaterialPageRoute(builder: (context) => const TwitterPage()),
                 );
               },
               child: Image.asset(
@@ -69,7 +73,10 @@ class HomePage extends StatelessWidget {
                     side: const BorderSide(color: Colors.red),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/menu');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const MenuPage()),
+                    );
                   },
                   child: const Text(
                     'Main Page',
@@ -83,7 +90,10 @@ class HomePage extends StatelessWidget {
                     side: const BorderSide(color: Colors.red),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/menu');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const MenuPage()),
+                    );
                   },
                   child: const Text(
                     'Menu Page',
@@ -97,7 +107,12 @@ class HomePage extends StatelessWidget {
                     side: const BorderSide(color: Colors.red),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/menu');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AboutPage(),
+                      ),
+                    );
                   },
                   child: const Text(
                     'About Us',

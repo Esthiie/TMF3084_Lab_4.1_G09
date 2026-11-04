@@ -53,7 +53,11 @@ class MenuPage extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Our Menu')),
+      appBar: AppBar(
+        title: const Text('Our Menu'),
+        backgroundColor: Colors.orange,
+        foregroundColor: Colors.white,
+      ),
       body: Column(
         children: [
           Expanded(

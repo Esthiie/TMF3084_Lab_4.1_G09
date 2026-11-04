@@ -27,7 +27,7 @@ class AboutPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey),
                 ),
-                child: Image.asset('images/Chef.jpg', fit: BoxFit.cover),
+                child: Image.asset('assets/images/Chef.jpg', fit: BoxFit.cover),
               ),
 
               const SizedBox(height: 20),
@@ -59,7 +59,10 @@ class AboutPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey),
                 ),
-                child: Image.asset('images/TomatoPizza.jpg', fit: BoxFit.cover),
+                child: Image.asset(
+                  'assets/images/TomatoPizza.jpg',
+                  fit: BoxFit.cover,
+                ),
               ),
 
               const SizedBox(height: 30),
