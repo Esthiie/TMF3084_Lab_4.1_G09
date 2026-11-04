@@ -5,6 +5,6 @@ void main() {
   testWidgets('Pizza Hunter app loads', (WidgetTester tester) async {
     await tester.pumpWidget(const PizzaHunterApp());
 
-    expect(find.text('Pizza Hunter'), findsOneWidget);
+    expect(find.text(' Pizza Hunter'), findsOneWidget);
   });
 }
