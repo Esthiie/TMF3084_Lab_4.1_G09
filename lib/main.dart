@@ -1,5 +1,4 @@
 // lib/main.dart
-import 'package:flutter/material.dart';
 
 import 'homepage.dart';
 
@@ -8,7 +7,7 @@ void main() {
 }
 
 class PizzaHunterApp extends StatelessWidget {
-  const PizzaHunterApp({Key? key}) : super(key: key);
+  const PizzaHunterApp({super.key});
 
   @override
   Widget build(BuildContext context) {
